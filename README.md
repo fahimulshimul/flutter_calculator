@@ -2,8 +2,8 @@
 <p align="center">A simple calculator application by using Flutter.</p>
 <p align="center">this is my first app that i built using flutter.</p>
 
-**only for andriod version**
-**need macbook for ios version**
+**only for andriod version.**
+**need macbook for ios version.**
 
 ### My resource
 
