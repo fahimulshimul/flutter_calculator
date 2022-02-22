@@ -27,6 +27,55 @@ class MyHomePage extends StatefulWidget {
 }
 
 class _MyHomePageState extends State<MyHomePage> {
+  String output = "0";
+
+  String _output = "0";
+  double num1 = 0.0;
+  double num2 = 0.0;
+  String operand = "";
+
+  buttonPressed(String buttonText) {
+    if (buttonText == "CLEAR") {
+      String _output = "0";
+      double num1 = 0.0;
+      double num2 = 0.0;
+      String operand = "";
+    } else if (buttonText == "+" ||
+        buttonText == "-" ||
+        buttonText == "/" ||
+        buttonText == "x") {
+      num1 = double.parse(output);
+      operand = buttonText;
+      _output = "0";
+    } else if (buttonText == ".") {
+      if (_output.contains(".")) {
+        print("already contains a decimals");
+        return;
+      } else {
+        _output = _output + buttonText;
+      }
+    } else if (buttonText == "=") {
+      num2 = double.parse(output);
+
+      if (operand == "+") {
+        _output = (num1 + num2).toString();
+      }
+      if (operand == "-") {
+        _output = (num1 - num2).toString();
+      }
+      if (operand == "x") {
+        _output = (num1 * num2).toString();
+      }
+      if (operand == "/") {
+        _output = (num1 / num2).toString();
+      }
+
+      num1 = 0.0;
+      num2 = 0.0;
+      _output = "0";
+    }
+  }
+
   Widget buildButton(String buttonText) {
     return new Expanded(
       child: new OutlineButton(
@@ -35,7 +84,7 @@ class _MyHomePageState extends State<MyHomePage> {
           buttonText,
           style: TextStyle(fontSize: 20.0, fontWeight: FontWeight.bold),
         ),
-        onPressed: () => {},
+        onPressed: () => buttonPressed(buttonText),
       ),
     );
   }
@@ -54,7 +103,7 @@ class _MyHomePageState extends State<MyHomePage> {
                 padding:
                     new EdgeInsets.symmetric(vertical: 24.0, horizontal: 12.0),
                 child: new Text(
-                  "0",
+                  output,
                   style: new TextStyle(
                       fontSize: 48.0, fontWeight: FontWeight.bold),
                 )),
