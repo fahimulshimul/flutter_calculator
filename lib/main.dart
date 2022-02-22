@@ -29,11 +29,9 @@ class MyHomePage extends StatefulWidget {
 class _MyHomePageState extends State<MyHomePage> {
   Widget buildButton() {
     return new Expanded(
-      child: new MaterialButton(
+      child: new OutlineButton(
         child: new Text("1"),
         onPressed: () => {},
-        color: Colors.blueGrey,
-        textColor: Colors.white,
       ),
     );
   }
@@ -51,14 +49,38 @@ class _MyHomePageState extends State<MyHomePage> {
             new Expanded(
               child: new Divider(),
             ),
-            new Row(
-              children: [
+            new Column(children: [
+              new Row(children: [
                 buildButton(),
                 buildButton(),
                 buildButton(),
                 buildButton()
-              ],
-            )
+              ]),
+              new Row(children: [
+                buildButton(),
+                buildButton(),
+                buildButton(),
+                buildButton()
+              ]),
+              new Row(children: [
+                buildButton(),
+                buildButton(),
+                buildButton(),
+                buildButton()
+              ]),
+              new Row(children: [
+                buildButton(),
+                buildButton(),
+                buildButton(),
+                buildButton()
+              ]),
+              new Row(children: [
+                buildButton(),
+                buildButton(),
+                buildButton(),
+                buildButton()
+              ]),
+            ]),
           ],
         ),
       ),
