@@ -33,7 +33,7 @@ class _MyHomePageState extends State<MyHomePage> {
         padding: new EdgeInsets.all(24.0),
         child: new Text(
           buttonText,
-          style: TextStyle(fontSize: 24.0, fontWeight: FontWeight.bold),
+          style: TextStyle(fontSize: 20.0, fontWeight: FontWeight.bold),
         ),
         onPressed: () => {},
       ),
@@ -49,7 +49,11 @@ class _MyHomePageState extends State<MyHomePage> {
       body: new Container(
         child: new Column(
           children: <Widget>[
-            new Text("0"),
+            new Container(
+                child: new Text(
+              "0",
+              style: new TextStyle(fontSize: 36.0, fontWeight: FontWeight.bold),
+            )),
             new Expanded(
               child: new Divider(),
             ),
