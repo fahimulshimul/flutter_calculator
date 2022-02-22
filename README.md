@@ -1,16 +1,14 @@
-# flutter_complete_guide
+<h1 align="center">Flutter Calculator App</h1>
+<p align="center">A simple calculator application by using Flutter.</p>
+<p align="center">this is my first app that i built using flutter.</p>
 
-A new Flutter project.
+**only for andriod version**
+**need macbook for ios version**
 
-## Getting Started
+### My resource
 
-This project is a starting point for a Flutter application.
+- [Udemy - learn-flutter-dart-to-build-ios-android-apps](https://www.udemy.com/course/learn-flutter-dart-to-build-ios-android-apps/)
+- [Flutter Coding Challenge: Building a Calculator App](https://youtu.be/eVG5DkPF5x8)
 
-A few resources to get you started if this is your first Flutter project:
 
-- [Lab: Write your first Flutter app](https://flutter.dev/docs/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://flutter.dev/docs/cookbook)
-
-For help getting started with Flutter, view our
-[online documentation](https://flutter.dev/docs), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+Created by [fahimul shimul] [2022/02/22]
