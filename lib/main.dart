@@ -31,7 +31,10 @@ class _MyHomePageState extends State<MyHomePage> {
     return new Expanded(
       child: new OutlineButton(
         padding: new EdgeInsets.all(24.0),
-        child: new Text(buttonText),
+        child: new Text(
+          buttonText,
+          style: TextStyle(fontSize: 24.0, fontWeight: FontWeight.bold),
+        ),
         onPressed: () => {},
       ),
     );
@@ -61,7 +64,7 @@ class _MyHomePageState extends State<MyHomePage> {
                 buildButton("4"),
                 buildButton("5"),
                 buildButton("6"),
-                buildButton("X")
+                buildButton("x")
               ]),
               new Row(children: [
                 buildButton("1"),
