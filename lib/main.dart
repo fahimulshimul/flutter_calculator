@@ -30,6 +30,7 @@ class _MyHomePageState extends State<MyHomePage> {
   Widget buildButton() {
     return new Expanded(
       child: new OutlineButton(
+        padding: new EdgeInsets.all(24.0),
         child: new Text("1"),
         onPressed: () => {},
       ),
