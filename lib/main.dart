@@ -36,10 +36,10 @@ class _MyHomePageState extends State<MyHomePage> {
 
   buttonPressed(String buttonText) {
     if (buttonText == "CLEAR") {
-      String _output = "0";
-      double num1 = 0.0;
-      double num2 = 0.0;
-      String operand = "";
+      _output = "0";
+      num1 = 0.0;
+      num2 = 0.0;
+      operand = "";
     } else if (buttonText == "+" ||
         buttonText == "-" ||
         buttonText == "/" ||
